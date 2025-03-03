@@ -1,0 +1,28 @@
+.table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .tableTitle,
+  .element {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tableTitle {
+    background-color: black;
+    color: white;
+  }
+  
+  .elementContainer:nth-child(even) {
+    background-color: #e0e0e0;
+  }
+  
+  .elementContainer:nth-child(odd) {
+    background-color: white;
+  }
+  
