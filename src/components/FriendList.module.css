@@ -14,7 +14,7 @@
       list-style: none;
   }
   
-  .friendsIistItem{
+  .friendsListItem{
     display: flex; 
     height: 250px;
       flex-direction: column;

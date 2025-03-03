@@ -7,21 +7,25 @@ export default function FriendList({friends} ){
        <ul className={css.friendsContainer}>
 
 {friends.map(({id, avatar, name, isOnline}) => (
+  <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
 
-<li className={css.friendsIistItem} key={id}>
+  ))}
+       </ul>
+ );
+  
+}
+
+function FriendListItem({avatar, name, isOnline}) {
+  return(
+  <li className={css.friendsListItem} >
  <div className={css.container} >
  <img className={css.icon} src={avatar} alt="Avatar" width="70" />
    <p className={css.usreName}> {name}</p>
    <p className={css.isOnline} style={{ color: isOnline ? "green" : "red"}}>{isOnline  ? `online` : `offline`}</p>
   </div>
 </li>
-  ))}
-       </ul>
- )
-  
+)
 }
-
-
 
 
    
