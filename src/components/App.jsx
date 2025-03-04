@@ -7,6 +7,7 @@ import transactions from "../transactions.json";
 
 import  Profile  from "./Profile";
 import  FriendList  from "./FriendList";
+
 import TransactionHistory from "./TransactionHistory";
 
 
